@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StudyCompanion - AI Mentor</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>StudyCompanion</h1>
+    <p>Your AI Mentor for Smart Productivity</p>
+  </header>
+
+  <main>
+    <section class="dashboard">
+      <div class="goal-tracker box">
+        <h2>🎯 Goals</h2>
+        <ul id="goalList"></ul>
+        <input type="text" id="goalInput" placeholder="Add a goal" />
+        <button onclick="addGoal()">Add</button>
+      </div>
+
+      <div class="task-manager box">
+        <h2>✅ Tasks & To-Do</h2>
+        <ul id="taskList"></ul>
+        <input type="text" id="taskInput" placeholder="Add a task" />
+        <button onclick="addTask()">Add</button>
+      </div>
+
+      <div class="schedule-manager box">
+        <h2>📅 Schedule</h2>
+        <input type="datetime-local" id="scheduleTime" />
+        <input type="text" id="scheduleInput" placeholder="Enter task/event" />
+        <button onclick="addSchedule()">Schedule</button>
+        <ul id="scheduleList"></ul>
+      </div>
+    </section>
+
+    <section class="ai-chat box">
+      <h2>🤖 AI Mentor</h2>
+      <div id="chatBox"></div>
+      <input type="text" id="chatInput" placeholder="Ask something..." />
+      <button onclick="sendMessage()">Send</button>
+    </section>
+  </main>
+</body>
+<script src="script.js"></script>
+</html>
