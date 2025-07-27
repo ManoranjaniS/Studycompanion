@@ -1,0 +1,115 @@
+package mano.com.Practising.service;
+
+
+import org.springframework.stereotype.Service;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.Random;
+
+@Service
+public class QuoteService {
+
+    private static final List<String> quotes = Arrays.asList(
+            "Push yourself, because no one else is going to do it for you.",
+            "Success doesn’t just find you. You have to go out and get it.",
+            "The harder you work for something, the greater you’ll feel when you achieve it.",
+            "Don’t wish for it. Work for it.",
+            "Great things never come from comfort zones.",
+            "Dream it. Wish it. Do it.",
+            "Stay focused and never give up.",
+            "Wake up with determination. Go to bed with satisfaction.",
+            "Little things make big days.",
+            "It’s going to be hard, but hard does not mean impossible.",
+            "Don’t stop when you’re tired. Stop when you’re done.",
+            "Work hard in silence, let success make the noise.",
+            "Dream bigger. Do bigger.",
+            "Don’t wait for opportunity. Create it.",
+            "Sometimes we’re tested not to show our weaknesses, but to discover our strengths.",
+            "The key to success is to focus on goals, not obstacles.",
+            "Believe in yourself and all that you are.",
+            "Doubt kills more dreams than failure ever will.",
+            "Success is what comes after you stop making excuses.",
+            "The way to get started is to quit talking and begin doing.",
+            "Your limitation—it's only your imagination.",
+            "Push yourself, because no one else is going to do it for you.",
+            "Sometimes later becomes never. Do it now.",
+            "Great things never come from comfort zones.",
+            "Dream it. Wish it. Do it.",
+            "Success doesn’t just find you. You have to go out and get it.",
+            "The harder you work for something, the greater you’ll feel when you achieve it.",
+            "Dream bigger. Do bigger.",
+            "Don’t stop when you’re tired. Stop when you’re done.",
+            "Wake up with determination. Go to bed with satisfaction.",
+            "Do something today that your future self will thank you for.",
+            "Little things make big days.",
+            "It’s going to be hard, but hard does not mean impossible.",
+            "Don’t wait for opportunity. Create it.",
+            "Sometimes we’re tested not to show our weaknesses, but to discover our strengths.",
+            "The key to success is to focus on goals, not obstacles.",
+            "Keep going. Everything you need will come to you at the perfect time.",
+            "Stay positive, work hard, make it happen.",
+            "Good things come to those who hustle.",
+            "Strive for progress, not perfection.",
+            "Hard work beats talent when talent doesn’t work hard.",
+            "Don’t limit your challenges. Challenge your limits.",
+            "If it doesn’t challenge you, it won’t change you.",
+            "Discipline is the bridge between goals and accomplishment.",
+            "It always seems impossible until it’s done.",
+            "Don't count the days. Make the days count.",
+            "Success is not for the lazy.",
+            "Set goals. Crush them. Repeat.",
+            "Your only limit is your mind.",
+            "Focus on being productive instead of busy.",
+            "You don’t have to be extreme, just consistent.",
+            "Winners are not people who never fail, but people who never quit.",
+            "Do not stop until you are proud.",
+            "Every accomplishment starts with the decision to try.",
+            "Start where you are. Use what you have. Do what you can.",
+            "Be stronger than your excuses.",
+            "Don’t be afraid to fail. Be afraid not to try.",
+            "Doubt kills more dreams than failure ever will.",
+            "Success is what happens after you’ve survived all your mistakes.",
+            "Work while they sleep. Learn while they party.",
+            "Be patient. Good things take time.",
+            "The struggle you’re in today is developing the strength you need tomorrow.",
+            "Push harder than yesterday if you want a different tomorrow.",
+            "Don’t let yesterday take up too much of today.",
+            "Go the extra mile. It’s never crowded.",
+            "There is no substitute for hard work.",
+            "Be obsessed with your own potential.",
+            "Motivation gets you started. Habit keeps you going.",
+            "Fall seven times, stand up eight.",
+            "It’s not whether you get knocked down. It’s whether you get up.",
+            "Stop doubting yourself. Work hard and make it happen.",
+            "The best view comes after the hardest climb.",
+            "You’ve got what it takes, but it will take everything you’ve got.",
+            "Don't tell people your plans. Show them your results.",
+            "Winners focus on winning. Losers focus on winners.",
+            "Your future is created by what you do today, not tomorrow.",
+            "Don’t be busy, be productive.",
+            "Think big, start small, act now.",
+            "One day or day one. You decide.",
+            "Excuses don’t get results.",
+            "Success usually comes to those who are too busy to be looking for it.",
+            "You are capable of amazing things.",
+            "The pain you feel today will be the strength you feel tomorrow.",
+            "If you’re tired, learn to rest, not quit.",
+            "Don’t downgrade your dream just to fit your reality.",
+            "Forget the mistake. Remember the lesson.",
+            "You can do anything, but not everything. Focus.",
+            "Believe you can and you’re halfway there.",
+            "You miss 100% of the shots you don’t take.",
+            "Action is the foundational key to all success.",
+            "Make each day your masterpiece.",
+            "Don’t count the days, make the days count.",
+            "Keep grinding, your future self will thank you.",
+            "Success is the sum of small efforts, repeated day in and day out."
+    );
+
+    final Random random = new Random();
+
+    public String getRandomQuote() {
+        return quotes.get(random.nextInt(quotes.size()));
+    }
+}
